@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  @font-face {
+    font-family: vazirmatnThin;
+    font-weight: 100;
+    src: url('../webfonts/Vazirmatn-Thin.woff2') format("woff");
+  } 
+  @font-face {
+    font-family: vazirmatnExLight;
+    font-weight: 200;
+    src: url('../webfonts/Vazirmatn-ExtraLight.woff2') format("woff2");
+  }
+  @font-face {
+    font-family: vazirmatnLight;
+    font-weight: 300;
+    src: url('../webfonts/Vazirmatn-Light.woff2') format("woff2");
+  }
+  @font-face {
+    font-family: vazirmatn;
+    font-weight: 400;
+    src: url('../webfonts/Vazirmatn-Regular.woff2') format("woff2");
+  }
+  @font-face {
+    font-family: vazirmatnMedium;
+    font-weight: 500;
+    src: url('../webfonts/Vazirmatn-Medium.woff2') format("woff2");
+  }
+  @font-face {
+    font-family: vazirmatnSemiB;
+    font-weight:600;
+    src: url('../webfonts/Vazirmatn-SemiBold.woff2') format("woff2");
+  }
+
+  @font-face {
+    font-family: vazirmatnBold;
+    font-weight: 700;
+    src: url('../webfonts/Vazirmatn-Bold.woff2') format("woff2");
+  }
+  @font-face {
+    font-family: vazirmatnExB;
+    font-weight: 800;
+    src: url('../webfonts/Vazirmatn-ExtraBold.woff2') format("woff2");
+  }
+}
