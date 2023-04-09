@@ -1,3 +1,8 @@
+// aos
+// animation
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
@@ -7,8 +12,19 @@ import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import Services from "./pages/Services";
 import Toturials from "./pages/Toturials";
+// import Course_benefit from './components/Course_benefit'
+import Info_Card from './components/Info_Card';
+// import Timeline_cart from './components/Timeline_cart';
+import Information_Course_Card from './components/Information_Course_Card';
+import Success_Card from './components/Success_Card';
 
 function App() {
+
+  Aos.init({
+    duration: 2500,
+    delay:500
+  })
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -16,10 +32,10 @@ function App() {
       errorElement: <Error />,
       children: [
         { index: true, element: <Home /> },
-        { path: "/toturials", element:<Toturials /> },
+        { path: "/toturials", element:<Info_Card /> },
         { path: "/services", element:<Services /> },
         { path: "/blog", element:<Blog /> },
-        { path: "/courses", element:<Courses /> },
+        { path: "/courses", element:<Success_Card /> },
         { path: "/contact", element:<Contact /> },
       ],
     },
