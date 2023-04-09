@@ -4,6 +4,7 @@
 
 
 @layer base {
+ 
   @font-face {
     font-family: vazirmatnThin;
     font-weight: 100;
@@ -45,4 +46,9 @@
     font-weight: 800;
     src: url('../webfonts/Vazirmatn-ExtraBold.woff2') format("woff2");
   }
+}
+
+
+.card{
+@apply mx-auto p-1 flex
 }
