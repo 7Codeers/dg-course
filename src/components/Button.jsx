@@ -1,12 +1,16 @@
-import React from 'react';
 
-
-
-// @Dev Please to change code Modify it
-const Button = () => {
+const Button = ({ type, variant, className, id, onClick, children }) => {
   return (
     <div>
-      <button>click me</button>
+      <button
+        type={type ? type : "button"}
+        variant={variant}
+        className={className}
+        id={id}
+        onClick={onclick}
+      >
+        {children}
+      </button>
     </div>
   );
 };

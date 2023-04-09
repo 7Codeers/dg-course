@@ -11,6 +11,7 @@ const Header = () => {
     { title: "بلاگ", to: "/services" },
     { title: "آموزش", to: "/toturials" },
     { title: "خانه", to: "/" },
+    { title: "ثبت نام", to: "/sign-up" },
   ];
 
   return (
